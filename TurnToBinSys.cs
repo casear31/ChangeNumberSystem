@@ -22,7 +22,6 @@ namespace Test4education
                     tmpStr.Append(numberInTen % 2);
                     numberInTen /= 2;
                 }
-                strRes.Append(1);
                 for (int i = tmpStr.Length - 1; i >= 0; i--) strRes.Append(tmpStr[i]);
 
             }
