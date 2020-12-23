@@ -15,23 +15,13 @@ namespace Test4education
         {
             var strRes = new StringBuilder(); 
             var tmpStr = new StringBuilder();
-            try
-            {
                 while (numberInTen >= 1)
                 {
                     tmpStr.Append(numberInTen % 2);
                     numberInTen /= 2;
                 }
                 for (int i = tmpStr.Length - 1; i >= 0; i--) strRes.Append(tmpStr[i]);
-
-            }
-            catch (DivideByZeroException)
-            {
-                MessageBox.Show("В этом мире можно всё кроме двух вещей: бросать сцепление и делить на ноль");
-            }
             return strRes;
-
         }
-
     }
 }
